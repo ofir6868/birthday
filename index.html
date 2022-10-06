@@ -11,7 +11,11 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
+        <style>
+input[type="text"] {
+  text-align: right;
+}
+        </style>
     </head>
     <body>
         <!-- Responsive navbar-->
@@ -40,11 +44,25 @@
         <div class="container">
             <div class="text-center mt-5">
                 <h1>יום הולדת לאופיר</h1>
-                <p class="lead">23.12.2022</p>
+                <p class="lead">08.10.22</p>
                 <p>😃מוזמנים להגיע בהמוניכם</p>
+                <p> <input type="text" id="myText" placeholder="הקלד את שמך"></input> </p>
+                
+                <button onclick="myFunction()">Try it</button>
+
             </div>
         </div>
         <!-- Bootstrap core JS-->
+        <script>
+            function myFunction() {
+              var name = document.getElementById("myText").value;
+                if(name) window.open("ofiregev68@gmail.com?subject=אישור מ"+name+"&body=אני, "+name+", מאשר את הגעתי ליום הולדתך, ב8.10 בשעה 21:00!")
+                else{
+                    alert("בבקשה הכנס שם תקני")
+                }
+            }
+            </script>
+            
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
