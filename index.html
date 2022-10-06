@@ -59,7 +59,7 @@
             <p>😃מוזמנים להגיע בהמוניכם</p>
 
             <hr>
-            <h5 id="header"> בחירת מנה </h5>
+            <h5 id="header"> אישור הגעה </h5>
 
             <div class="input-group mx-auto" style="width:185px"  id="nameInput">
                 <div class="input-group-prepend">
@@ -95,7 +95,7 @@
         document.getElementById('burgers').style.display = 'none';
         document.getElementById('buns').style.display = 'none';
         document.getElementById('submit').style.display = 'none';
-        document.getElementById('header').style.display = 'none';
+        document.getElementById('header').innerText = 'אישור הגעה';
 
         function myFunction() {
             var name = document.getElementById("myText").value;
@@ -115,7 +115,7 @@
             document.getElementById('burgers').style.display = 'inline';
             document.getElementById('buns').style.display = 'inline';
             document.getElementById('submit').style.display = 'inline';
-            document.getElementById('header').style.display = 'inline';
+            document.getElementById('header').innerText = 'בחירת מנה';
             document.getElementById('nameInput').style.display = 'none';
             }
             else{
